@@ -1,0 +1,1 @@
+Provider=SQLOLEDB.1;Password=sxzy2008!@#;Persist Security Info=True;User ID=zy;Initial Catalog=carsellmis;Data Source=122.225.102.238,50000;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=YCX;Use Encryption for Data=False;Tag with column collation when possible=False
