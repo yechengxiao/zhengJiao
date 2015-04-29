@@ -14,7 +14,9 @@ uses
   jsxxU in 'jsxxU.pas' {jsxxF},
   jsxx_nrU in 'jsxx_nrU.pas' {jsxx_nrF},
   kfxxMainU in 'kfxxMainU.pas' {kfxxMainF},
-  xsxx_nrU in 'xsxx_nrU.pas' {xsxx_nrF};
+  xsxx_nrU in 'xsxx_nrU.pas' {xsxx_nrF},
+  objectU in 'objectU.pas' {objectF},
+  createObject in 'createObject.pas' {createF};
 
 {$R *.res}
 
@@ -24,16 +26,22 @@ begin
   // 创建启动画面窗口
   startF := TstartF.Create(startF);
   // 显示启动画面窗口
-  startF.Show;
+  startF.Visible := False;
+  startF.ShowModal;
   startF.Update;
 
-  Delay(1000);
+  // 载入延时
+  // Delay(1000);
 
-  Application.CreateForm(TmainF, mainF);
+  if startF.login then
+  begin
+    Application.CreateForm(TmainF, mainF);
+  end;
 
   startF.Hide;
   startF.Free;
 
   Application.Run;
+
 end.
 

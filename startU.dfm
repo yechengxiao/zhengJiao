@@ -1,6 +1,6 @@
 object startF: TstartF
-  Left = 233
-  Top = 120
+  Left = 270
+  Top = 130
   BorderStyle = bsNone
   Caption = #21551#21160#30028#38754
   ClientHeight = 530
@@ -24,7 +24,7 @@ object startF: TstartF
     Picture.Data = {
       0B546478504E47496D61676589504E470D0A1A0A0000000D4948445200000386
       0000021A0802000000F3C2C4D6000000017352474200AECE1CE9000000046741
-      4D410000B18F0BFC6105000000097048597300000EC200000EC20115284A8000
+      4D410000B18F0BFC6105000000097048597300000EC100000EC101B8916BED00
       00FFA549444154785EECFD859723C796AF0D7F7FDBFBDD9903B6DBEEB69BDCCC
       CCECC6E22A4925153333338398998AAB998DE71C9F3373F1BDDF6FC796A2B253
       AA76B7C73373EFFABCD6B362458652292855E6933B2276FC7FFEEB8FFFF2EFC1
@@ -25769,5 +25769,59 @@ object startF: TstartF
       E8752CAD86E171CBCB52A86E0768B5A931DAD21C6F6D49D4664B60AB86AAD2BE
       CE4C5B4BBCA32DD9DF9FEDE949FFCFFFF93FFF5F788D5CD3E991E64700000000
       49454E44AE426082}
+  end
+  object cxLabel1: TcxLabel
+    Left = 52
+    Top = 337
+    Caption = 'userName'
+    ParentColor = False
+    Style.BorderStyle = ebsNone
+    Style.Color = clWhite
+    Style.TransparentBorder = False
+    Transparent = True
+  end
+  object cxLabel2: TcxLabel
+    Left = 52
+    Top = 405
+    Caption = 'passWord'
+    ParentColor = False
+    Style.BorderStyle = ebsNone
+    Style.Color = clWhite
+    Style.TransparentBorder = False
+    Transparent = True
+  end
+  object edt_name: TcxTextEdit
+    Left = 121
+    Top = 329
+    TabOrder = 2
+    Width = 121
+  end
+  object edt_pass: TcxTextEdit
+    Left = 121
+    Top = 397
+    Properties.PasswordChar = '*'
+    TabOrder = 3
+    Width = 121
+  end
+  object btn_exit: TcxButton
+    Left = 53
+    Top = 466
+    Width = 75
+    Height = 25
+    Caption = 'btn_exit'
+    TabOrder = 4
+    OnClick = btn_exitClick
+    LookAndFeel.Kind = lfUltraFlat
+    LookAndFeel.NativeStyle = True
+  end
+  object btn_sure: TcxButton
+    Left = 158
+    Top = 466
+    Width = 75
+    Height = 25
+    Caption = 'btn_sure'
+    TabOrder = 5
+    OnClick = btn_sureClick
+    LookAndFeel.NativeStyle = True
   end
 end

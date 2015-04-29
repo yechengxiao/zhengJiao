@@ -1,6 +1,6 @@
 object mainF: TmainF
-  Left = 307
-  Top = 177
+  Left = 568
+  Top = 182
   Width = 759
   Height = 486
   Caption = #25919#25945#31649#29702
@@ -59,7 +59,7 @@ object mainF: TmainF
         Top = 0
         Width = 652
         Height = 448
-        ActivePage = tab_js
+        ActivePage = tab_bj
         Align = alClient
         TabOrder = 0
         OnChange = pageCtl_jcChange

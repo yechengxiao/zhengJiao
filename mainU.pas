@@ -9,7 +9,7 @@ uses
   cxDBData, cxGridLevel, cxClasses, cxGridCustomView,
   cxGridCustomTableView, cxGridTableView, cxGridDBTableView, cxGrid, ADODB,
   cxContainer, cxLabel, cxTextEdit, cxGroupBox, cxRadioGroup, cxMaskEdit,
-  cxDropDownEdit;
+  cxDropDownEdit, Menus, cxLookAndFeelPainters, StdCtrls, cxButtons;
 
 type
   TmainF = class(TForm)
@@ -39,7 +39,7 @@ var
   mainF: TmainF;
 
 implementation
-uses dataModule, utilU, bjxx, xsxxU, jsxxU, kfxxMainU;
+uses dataModule, utilU, bjxx, xsxxU, jsxxU, kfxxMainU, objectU;
 {$R *.dfm}
 
 procedure TmainF.pageCtlChange(Sender: TObject);
